@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4E063305-6333-4025-9840-E2BFDC3EA00F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SacredWhisperView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1A46A383-01C6-452E-8B15-D1921B194738</key>
+		<string>ssh://github.com/adachic/SacredWhisperView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SacredWhisperView.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1A46A383-01C6-452E-8B15-D1921B194738</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/adachic/SacredWhisperView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1A46A383-01C6-452E-8B15-D1921B194738</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1A46A383-01C6-452E-8B15-D1921B194738</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SacredWhisperView</string>
+		</dict>
+	</array>
+</dict>
+</plist>

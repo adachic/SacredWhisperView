@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CIDR_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/.idea">
+      <sourceFolder url="file://$MODULE_DIR$/.idea" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/SacredWhisperView">
+      <sourceFolder url="file://$MODULE_DIR$/SacredWhisperView" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/SacredWhisperView.xcworkspace">
+      <sourceFolder url="file://$MODULE_DIR$/SacredWhisperView.xcworkspace" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/SacredWhisperView/SacredWhisperView.xcodeproj">
+      <sourceFolder url="file://$MODULE_DIR$/SacredWhisperView/SacredWhisperView.xcodeproj" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/SacredWhisperViewSample">
+      <sourceFolder url="file://$MODULE_DIR$/SacredWhisperViewSample" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
+

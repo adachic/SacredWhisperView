@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'SacredWhisperView' target in the 'SacredWhisperView' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+
+#endif

@@ -1,0 +1,26 @@
+//
+//  SacredWhisperView.h
+//  SacredWhisperView
+//
+//  Created by 安達 彰典 on 06/16/13.
+//  Copyright (c) 2013 安達 彰典. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+/**
+* The `SacredWhisperView` is a class provides methods to present the chat view.
+ */
+@interface SacredWhisperView : UIView
+
+- (id)initWithFrame:(CGRect)frame;
+
+- (void)openChatRoom:(NSString *)roomName;
+
+- (void)addChatWithRoom:(NSString *)roomName chat:(SWChat *)chat;
+
+@end
+
+
+
