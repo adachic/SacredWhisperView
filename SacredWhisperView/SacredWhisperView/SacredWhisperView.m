@@ -18,12 +18,5 @@
 
 }
 
-- (void)openChatRoom:(NSString *)roomName{
-
-}
-
-- (void)addChatWithRoom:(NSString *)roomName chat:(SWChat *)chat{
-
-}
 
 @end
