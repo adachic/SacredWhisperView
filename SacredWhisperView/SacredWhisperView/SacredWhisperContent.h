@@ -11,15 +11,14 @@
 
 @interface SacredWhisperContent : NSObject
 
+@property (retain) NSString *chat;
+@property (retain) NSDictionary *attributes;
+
+/*:w
 @property (assign) SacredWhisperContent *next;
 @property (assign) NSUInteger themeType;
-@property (retain) NSString *caption;
-@property (retain) NSString *content;
+@property (retain) NSString *chat;
 @property (retain) NSDictionary* attributes;
-
-+ (SacredWhisperContent *)sacredWhisperContentWithThemeType:(NSUInteger)themeType
-                                       caption:(NSString *)caption
-                                       content:(NSString *)content
-                                    attributes:(NSDictionary *)attributes;
+*/
 
 @end

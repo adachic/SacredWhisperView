@@ -8,26 +8,40 @@
 
 #import "SacredWhisperRoom.h"
 #import "SacredWhisperContent.h"
+#import "ChatStore.h"
 
+@interface SacredWhisperRoom ()
+@property(retain) ChatStore *chatStore;
+@property(retain) NSString *roomName;
+@end
 
 @implementation SacredWhisperRoom
 
-- (void)open{
-
+- (id)initWithRoomName:(NSString *)roomName {
+    if (self = [super init]) {
+        _chatStore = [[ChatStore alloc] init];
+        _roomName = roomName;
+    }
+    return self;
 }
 
-- (void)close{
-
+- (void)open {
+    self.chats = [self.chatStore read:self.roomName];
 }
 
-- (void)performFilter:(NSString *)expression{
-
+- (void)close {
+    [self.chatStore writeWithRoomName:self.roomName chats:self.chats];
 }
 
-- (void)addWhisperContentWithThemeType:(NSUInteger)themeType
-                               caption:(NSString *)caption
-                               content:(NSString *)content
-                            attributes:(NSDictionary *)attributes{
-
+- (void)performFilter:(NSString *)expression {
 }
+
+- (void)addWhisperContentWithCaption:(NSString *)caption
+                          attributes:(NSDictionary *)attributes {
+    SacredWhisperContent *content = [[SacredWhisperContent alloc] init];
+    content.attributes = attributes;
+    content.chat = caption;
+    [self.chats addObject:content];
+}
+
 @end

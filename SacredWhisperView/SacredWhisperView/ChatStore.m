@@ -10,19 +10,17 @@
 
 const NSString *CSStoreDirectoryPath = @"Documents";
 
+@interface ChatStore ()
+@property(retain) dispatch_semaphore_t sem;
+@end
 
 @implementation ChatStore
 
-static ChatStore *chatStore;
-static dispatch_semaphore_t sem;
-
-+ (ChatStore *)sharedChatStore {
-    static dispatch_once_t token;
-    dispatch_once(&token, ^{
-        chatStore = [[ChatStore alloc] init];
-        sem = dispatch_semaphore_create(1);
-    });
-    return chatStore;
+- (id)init{
+    if(self = [super init]){
+        _sem = dispatch_semaphore_create(1);
+    }
+    return self;
 }
 
 - (NSString *)makeFilenameWithRoomName:(NSString *)roomName {
@@ -31,22 +29,22 @@ static dispatch_semaphore_t sem;
 
 - (NSMutableArray *)read:(NSString *)roomName {
     NSMutableArray *mArray;
-    dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+    dispatch_semaphore_wait(self.sem, DISPATCH_TIME_FOREVER);
     {
         mArray = [NSKeyedUnarchiver unarchiveObjectWithFile:[self makeFilenameWithRoomName:roomName]];
     }
-    dispatch_semaphore_signal(sem);
+    dispatch_semaphore_signal(self.sem);
     return mArray;
 }
 
 - (void)writeWithRoomName:(NSString *)roomName chats:(NSMutableArray *)chats {
-    dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+    dispatch_semaphore_wait(self.sem, DISPATCH_TIME_FOREVER);
     {
         NSString *directory = [NSHomeDirectory() stringByAppendingPathComponent:CSStoreDirectoryPath];
         NSString *filePath = [directory stringByAppendingPathComponent:[self makeFilenameWithRoomName:roomName]];
         [NSKeyedArchiver archiveRootObject:chats toFile:filePath];
     }
-    dispatch_semaphore_signal(sem);
+    dispatch_semaphore_signal(self.sem);
 }
 
 @end

@@ -10,10 +10,11 @@
 
 @class SacredWhisperContent;
 
-
 @interface SacredWhisperRoom : NSObject
 
-@property SacredWhisperContent *head;
+@property(retain) NSMutableArray *chats;
+
+- (id)initWithRoomName:(NSString *)roomName;
 
 - (void)open;
 
@@ -21,9 +22,6 @@
 
 - (void)performFilter:(NSString *)expression;
 
-- (void)addWhisperContentWithThemeType:(NSUInteger)themeType
-                               caption:(NSString *)caption
-                               content:(NSString *)content
-                            attributes:(NSDictionary *)attributes;
-
+- (void)addWhisperContentWithCaption:(NSString *)caption
+                          attributes:(NSDictionary *)attributes;
 @end

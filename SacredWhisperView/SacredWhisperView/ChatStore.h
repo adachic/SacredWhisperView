@@ -10,7 +10,7 @@
 
 
 @interface ChatStore : NSObject
-+ (ChatStore *)sharedChatStore;
+- (id)init;
 - (NSMutableArray*)read:(NSString *)roomName;
 - (void)writeWithRoomName:(NSString *)roomName chats:(NSMutableArray*)chats;
 @end

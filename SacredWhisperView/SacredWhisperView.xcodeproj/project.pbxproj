@@ -24,7 +24,6 @@
 		E30F5201DD0E46859832CB47 /* SacredWhisperViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E30F5665E11CFCECCCF299E0 /* SacredWhisperViewTests.m */; };
 		E30F53AA0B9E5C7678EC6AC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30F59A1E9A291FA546E61D8 /* Foundation.framework */; };
 		E30F53F56ED222A5F36A9A31 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30F58912241C9BC8158FBB8 /* SenTestingKit.framework */; };
-		E30F545A78402E80968AF6CD /* SacredWhisperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E30F530299ACF98ABCB743EE /* SacredWhisperManager.m */; };
 		E30F5502E049BA2EB12601E1 /* StardustHash.m in Sources */ = {isa = PBXBuildFile; fileRef = E30F590BF32AD8125CDCDE37 /* StardustHash.m */; };
 		E30F567C738D6059E9561258 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30F552AC969BEBB5C4952AA /* UIKit.framework */; };
 		E30F5987DC23480243E0EAAC /* SacredWhisperView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E30F52BE6C34C6774D0DCBF7 /* SacredWhisperView.h */; };
@@ -63,10 +62,8 @@
 		C84721CD17709A6B00878252 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E30F5179F5FCAD119D3A1B3B /* SacredWhisperView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SacredWhisperView-Prefix.pch"; sourceTree = "<group>"; };
 		E30F517ED217A14636A7008B /* SacredWhisperRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SacredWhisperRoom.h; sourceTree = "<group>"; };
-		E30F522D2907FF03256A8412 /* SacredWhisperManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SacredWhisperManager.h; sourceTree = "<group>"; };
 		E30F529921F6EFDB0D98CE90 /* SacredWhisperView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SacredWhisperView.m; sourceTree = "<group>"; };
 		E30F52BE6C34C6774D0DCBF7 /* SacredWhisperView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SacredWhisperView.h; sourceTree = "<group>"; };
-		E30F530299ACF98ABCB743EE /* SacredWhisperManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SacredWhisperManager.m; sourceTree = "<group>"; };
 		E30F530D935904879B252E24 /* libSacredWhisperView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSacredWhisperView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30F53AE967564526047AEE8 /* SacredWhisperViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "SacredWhisperViewTests-Info.plist"; sourceTree = "<group>"; };
 		E30F54AEA5EDC58DC17E6F62 /* StardustHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StardustHash.h; sourceTree = "<group>"; };
@@ -123,8 +120,6 @@
 				E30F5D73B13CED5AE256149F /* Supporting Files */,
 				E30F529921F6EFDB0D98CE90 /* SacredWhisperView.m */,
 				E30F52BE6C34C6774D0DCBF7 /* SacredWhisperView.h */,
-				E30F522D2907FF03256A8412 /* SacredWhisperManager.h */,
-				E30F530299ACF98ABCB743EE /* SacredWhisperManager.m */,
 				E30F5BF765B8337889AF3E62 /* SacredWhisperContent.m */,
 				E30F595D7C2B42484122CCE4 /* SacredWhisperContent.h */,
 				E30F5A961BE4570EBFE80B8D /* SacredWhisperRoom.m */,
@@ -327,7 +322,6 @@
 			files = (
 				E30F5D4BDEB828AA7A9B9312 /* SacredWhisperView.m in Sources */,
 				E30F5502E049BA2EB12601E1 /* StardustHash.m in Sources */,
-				E30F545A78402E80968AF6CD /* SacredWhisperManager.m in Sources */,
 				E30F5D05E5550036DBDA96B8 /* SacredWhisperContent.m in Sources */,
 				E30F5D54AACCA4A490529894 /* SacredWhisperRoom.m in Sources */,
 				E30F5DB1153AB5783EF25194 /* ChatStore.m in Sources */,

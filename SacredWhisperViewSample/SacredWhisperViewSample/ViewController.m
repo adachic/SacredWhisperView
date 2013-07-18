@@ -10,7 +10,7 @@
 #import <SacredWhisperView/SacredWhisperView.h>
 
 @interface ViewController ()
-@property SacredWhisperView *stardustView;
+@property SacredWhisperView *chatView;
 @end
 
 @implementation ViewController
@@ -18,6 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    self.chatView = [[SacredWhisperView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+
+    [self.chatView openRoom:@"1"];
+
+    NSDictionary *attribute = @{@"type" : @1,
+            @"image" : nil};
+    [self.chatView addChat:@"test" attributes:attribute];
 }
 
 - (void)didReceiveMemoryWarning {

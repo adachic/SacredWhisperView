@@ -14,7 +14,11 @@
  */
 @interface SacredWhisperView : UIView
 
-- (id)initWithFrame:(CGRect)frame;
+- (BOOL)openRoom:(NSString *)roomName;
+
+- (BOOL)closeRoom:(NSString *)roomName;
+
+- (void)addChat:(NSString *)caption attributes:(NSDictionary *)attributes;
 
 @end
 
