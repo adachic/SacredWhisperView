@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 
-@interface AncientSoulsKeeper : NSObject
-+ (NSData *)read:(NSString *)roomName;
-+ (void)writeWithRoomName:(NSString *)roomName data:(NSData *)data;
-+ (void)appendWithRoomName:(NSString *)roomName data:(NSData *)data;
+@interface ChatStore : NSObject
++ (ChatStore *)sharedChatStore;
+- (NSMutableArray*)read:(NSString *)roomName;
+- (void)writeWithRoomName:(NSString *)roomName chats:(NSMutableArray*)chats;
 @end

@@ -33,7 +33,7 @@
 		E30F5D05E5550036DBDA96B8 /* SacredWhisperContent.m in Sources */ = {isa = PBXBuildFile; fileRef = E30F5BF765B8337889AF3E62 /* SacredWhisperContent.m */; };
 		E30F5D4BDEB828AA7A9B9312 /* SacredWhisperView.m in Sources */ = {isa = PBXBuildFile; fileRef = E30F529921F6EFDB0D98CE90 /* SacredWhisperView.m */; };
 		E30F5D54AACCA4A490529894 /* SacredWhisperRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = E30F5A961BE4570EBFE80B8D /* SacredWhisperRoom.m */; };
-		E30F5DB1153AB5783EF25194 /* AncientSoulsKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = E30F5520216C9B87B3EB6C1E /* AncientSoulsKeeper.m */; };
+		E30F5DB1153AB5783EF25194 /* ChatStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E30F5520216C9B87B3EB6C1E /* ChatStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,9 +71,9 @@
 		E30F53AE967564526047AEE8 /* SacredWhisperViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "SacredWhisperViewTests-Info.plist"; sourceTree = "<group>"; };
 		E30F54AEA5EDC58DC17E6F62 /* StardustHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StardustHash.h; sourceTree = "<group>"; };
 		E30F54BBC1F03828153B1F75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E30F5520216C9B87B3EB6C1E /* AncientSoulsKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AncientSoulsKeeper.m; sourceTree = "<group>"; };
+		E30F5520216C9B87B3EB6C1E /* ChatStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatStore.m; sourceTree = "<group>"; };
 		E30F552AC969BEBB5C4952AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E30F558EE0EB884AB3AE90A6 /* AncientSoulsKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AncientSoulsKeeper.h; sourceTree = "<group>"; };
+		E30F558EE0EB884AB3AE90A6 /* ChatStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatStore.h; sourceTree = "<group>"; };
 		E30F5665E11CFCECCCF299E0 /* SacredWhisperViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SacredWhisperViewTests.m; sourceTree = "<group>"; };
 		E30F58912241C9BC8158FBB8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		E30F590BF32AD8125CDCDE37 /* StardustHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StardustHash.m; sourceTree = "<group>"; };
@@ -129,8 +129,8 @@
 				E30F595D7C2B42484122CCE4 /* SacredWhisperContent.h */,
 				E30F5A961BE4570EBFE80B8D /* SacredWhisperRoom.m */,
 				E30F517ED217A14636A7008B /* SacredWhisperRoom.h */,
-				E30F5520216C9B87B3EB6C1E /* AncientSoulsKeeper.m */,
-				E30F558EE0EB884AB3AE90A6 /* AncientSoulsKeeper.h */,
+				E30F5520216C9B87B3EB6C1E /* ChatStore.m */,
+				E30F558EE0EB884AB3AE90A6 /* ChatStore.h */,
 			);
 			path = SacredWhisperView;
 			sourceTree = "<group>";
@@ -330,7 +330,7 @@
 				E30F545A78402E80968AF6CD /* SacredWhisperManager.m in Sources */,
 				E30F5D05E5550036DBDA96B8 /* SacredWhisperContent.m in Sources */,
 				E30F5D54AACCA4A490529894 /* SacredWhisperRoom.m in Sources */,
-				E30F5DB1153AB5783EF25194 /* AncientSoulsKeeper.m in Sources */,
+				E30F5DB1153AB5783EF25194 /* ChatStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

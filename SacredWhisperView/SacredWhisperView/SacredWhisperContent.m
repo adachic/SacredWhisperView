@@ -11,11 +11,11 @@
 
 @implementation SacredWhisperContent
 
-
 + (SacredWhisperContent *)sacredWhisperContentWithThemeType:(NSUInteger)themeType
                                                     caption:(NSString *)caption
                                                     content:(NSString *)content
                                                  attributes:(NSDictionary *)attributes{
 
 }
+
 @end
