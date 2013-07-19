@@ -8,7 +8,6 @@
 
 #import "SacredWhisperContent.h"
 
-
 @implementation SacredWhisperContent
 
 @end

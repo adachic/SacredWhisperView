@@ -41,7 +41,9 @@
     SacredWhisperContent *content = [[SacredWhisperContent alloc] init];
     content.attributes = attributes;
     content.chat = caption;
-    [self.chats addObject:content];
+    NSMutableArray *chats = self.chats;
+    [chats addObject:content];
+    self.chats = chats;
 }
 
 @end

@@ -23,9 +23,14 @@
 
     [self.chatView openRoom:@"1"];
 
-    NSDictionary *attribute = @{@"type" : @1,
-            @"image" : nil};
+    NSDictionary *attribute = @{
+            SWContentAttributeViewSide : @0,
+//            SWContentAttributeTextBGColor : ,
+//            SWContentAttributeViewSide : @0,
+//            SWContentAttributeFaceImage : @0
+    };
     [self.chatView addChat:@"test" attributes:attribute];
+    [self.view addSubview:self.chatView];
 }
 
 - (void)didReceiveMemoryWarning {

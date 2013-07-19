@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface SacredWhisperContent : NSObject
 
 @property (retain) NSString *chat;

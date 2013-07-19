@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+FOUNDATION_EXPORT NSString const *SWContentAttributeViewSide;
+FOUNDATION_EXPORT NSString const *SWContentAttributeFaceImage;
+FOUNDATION_EXPORT NSString const *SWContentAttributeTextBGColor;
+FOUNDATION_EXPORT NSString const *SWContentAttributeBaseBGColor;
+
 /**
 * The `SacredWhisperView` is a class provides methods to present the chat view.
  */
